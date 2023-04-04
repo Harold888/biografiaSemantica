@@ -1,37 +1,50 @@
-body{
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-}
-header{
-    background-color: #333;
-    color: white;
+    
 }
 
-nav{
-    background-color: #555;
-    color: #fff;
+header {
+    text-align: center;
+    color: #111112;
+}
+
+nav {
+    text-align: center;
+    background-color: #593C64;
+    color: #FFFFFF;
     display: flex;
     padding: 20px;
 }
-nav ul{
+
+nav ul {
+    margin-top: 1em;
     display: flex;
     margin: 0;
     padding: 0px;
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
+
+    text-align: center;
     color: #fff;
-    padding: 10px;
+    padding: 25px;
     text-decoration: none;
+    font-size: 1.5em;
 }
-.container{
+
+.container {
     display: flex;
 }
-aside{
-    background-color: #ddd;
+
+aside {
+    background-image: url(imagen/fondo.jpg);
+    background-size: cover;
     padding: 10px;
     width: 25%;
     display: flex;
@@ -39,26 +52,90 @@ aside{
     align-items: center;
 }
 
-main{
+aside img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+}
+
+
+main {
     padding: 10px;
     width: 75%;
 }
 
-footer{
-    background-color: #333;
-    color: white;
+.buscar {
+    position: relative;
+    display: inline-block;
 }
 
-footer ul li a{
+.buscar input[type="text"] {
+    padding: 8px 30px 8px 10px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 400px;
+    height: 1.8em;
+    margin-left: 17em;
+    text-align: center;
+    background-color: #eee;
+}
+
+.buscar span {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.buscar input[type="text"]:focus+span {
+    color: #333;
+}
+
+footer {
+    background-color: #593C64;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer ul li a {
+    font-size: 1.4em;
     color: #fff;
     padding: 10px;
     text-decoration: none;
 }
 
 
-footer ul{
+footer ul {
     display: flex;
     margin: 0;
     padding: 0px;
     list-style: none;
+}
+
+main h3{
+    font-size: 1.8em;
+    text-align: center;
+}
+main p{
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+aside h3{
+    font-size: 1.8em;
+    text-align: center;
 }
